@@ -1,0 +1,44 @@
+{
+    "name": "vnet1",
+    "id": "/subscriptions/0e265dc0-0642-41af-83f6-d96fec4e975b/resourceGroups/test/providers/Microsoft.Network/virtualNetworks/vnet1",
+    "etag": "W/\"ffd0cd80-99c4-47f4-b1e8-081515e0278e\"",
+    "type": "Microsoft.Network/virtualNetworks",
+    "location": "eastus",
+    "properties": {
+        "provisioningState": "Succeeded",
+        "resourceGuid": "d6d36a84-992b-47e8-b603-282b0a12c4c5",
+        "addressSpace": {
+            "addressPrefixes": [
+                "10.0.0.0/16"
+            ]
+        },
+        "subnets": [
+            {
+                "name": "Subnet-1",
+                "id": "/subscriptions/0e265dc0-0642-41af-83f6-d96fec4e975b/resourceGroups/test/providers/Microsoft.Network/virtualNetworks/vnet1/subnets/Subnet-1",
+                "etag": "W/\"ffd0cd80-99c4-47f4-b1e8-081515e0278e\"",
+                "properties": {
+                    "provisioningState": "Succeeded",
+                    "addressPrefix": "10.0.0.0/24",
+                    "ipConfigurations": [
+                        {
+                            "id": "/subscriptions/0e265dc0-0642-41af-83f6-d96fec4e975b/resourceGroups/TEST/providers/Microsoft.Network/networkInterfaces/NIC1/ipConfigurations/IPCONFIG1"
+                        },
+                        {
+                            "id": "/subscriptions/0e265dc0-0642-41af-83f6-d96fec4e975b/resourceGroups/TEST/providers/Microsoft.Network/networkInterfaces/NIC1/ipConfigurations/IPCONFIG2"
+                        },
+                        {
+                            "id": "/subscriptions/0e265dc0-0642-41af-83f6-d96fec4e975b/resourceGroups/TEST/providers/Microsoft.Network/networkInterfaces/VNET2.1/ipConfigurations/IPCONFIG1"
+                        }
+                    ],
+                    "delegations": [],
+                    "privateEndpointNetworkPolicies": "Disabled",
+                    "privateLinkServiceNetworkPolicies": "Enabled"
+                },
+                "type": "Microsoft.Network/virtualNetworks/subnets"
+            }
+        ],
+        "virtualNetworkPeerings": [],
+        "enableDdosProtection": false
+    }
+}
